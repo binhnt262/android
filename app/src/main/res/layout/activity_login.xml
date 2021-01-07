@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    tools:context=".Login"
+    android:gravity="center"
+    android:background="#2D3E4F"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="@drawable/edittext"
+        android:gravity="center_vertical"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginStart="16dp"
+            android:paddingTop="10px"
+            android:src="@drawable/ic_user"
+            android:layout_width="24dp"
+            android:layout_height="24dp"/>
+        <EditText
+            android:id="@+id/edtUsername"
+            android:hint="Tên đăng nhập"
+            android:background="@drawable/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/edittext"
+        android:gravity="center_vertical"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginStart="16dp"
+            android:paddingTop="10px"
+            android:src="@drawable/ic_padlock"
+            android:layout_width="24dp"
+            android:layout_height="24dp"/>
+        <EditText
+            android:hint="Mật khẩu"
+            android:background="@drawable/edittext"
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:background="@drawable/edittext"
+        android:text="Đăng nhập"
+        android:layout_marginTop="43dp"
+        android:layout_width="191dp"
+        android:layout_height="48dp"/>
+</LinearLayout>
